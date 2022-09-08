@@ -5,15 +5,16 @@ using UnityEngine;
 public class playermovements : MonoBehaviour
 {
     private Rigidbody2D body;
+    private BoxCollider2D boxCollider;
 
     [SerializeField] private float speed;
     [SerializeField] private int jumpPower;
-
-    private bool grounded;
+    [SerializeField] private LayerMask groundLayer;
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     private void Update()
@@ -21,19 +22,22 @@ public class playermovements : MonoBehaviour
 
         body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
 
-        if(Input.GetKey(KeyCode.Space) && grounded)
+        if(Input.GetKey(KeyCode.Space) && isGrounded())
             Jump();
     }
 
     private void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, jumpPower);
-        grounded = false;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
-            grounded = true;
+    }
+
+    private bool isGrounded()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycastHit.collider != null;
     }
 }
