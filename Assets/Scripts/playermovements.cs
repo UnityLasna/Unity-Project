@@ -41,12 +41,12 @@ public class playermovements : MonoBehaviour
             pressjump = false;
         }
 
-
         // Set animator parameters
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("walk", horizontalInput != 0 && Input.GetKey(KeyCode.LeftShift));
         anim.SetBool("jump", pressjump);
         anim.SetBool("grounded", isGrounded());
+        anim.SetBool("crouch", Input.GetKey(KeyCode.DownArrow) && isGrounded() && horizontalInput == 0);
     }
 
     private void Jump()
@@ -54,9 +54,11 @@ public class playermovements : MonoBehaviour
         body.velocity = new Vector2(body.velocity.x, jumpPower);
     }
 
-    private bool isGrounded()
+    public bool isGrounded()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.2f, groundLayer);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
     }
+
+    //public bool canAttack() {}
 }
