@@ -8,6 +8,7 @@ public class playermovements : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Animator anim;
     private bool pressjump;
+    private laddermovements laddermovements;
 
     [SerializeField] private float speed;
     [SerializeField] private int jumpPower;
@@ -19,6 +20,7 @@ public class playermovements : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        laddermovements = GetComponent<laddermovements>();
     }
 
     private void Update()
@@ -51,6 +53,7 @@ public class playermovements : MonoBehaviour
         anim.SetBool("jump", pressjump);
         anim.SetBool("grounded", isGrounded());
         anim.SetBool("crouch", Input.GetKey(KeyCode.DownArrow) && isGrounded() && horizontalInput == 0);
+        anim.SetBool("climb", laddermovements.isClimbing);
     }
 
     private void Jump()

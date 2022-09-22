@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Wall
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -42,4 +43,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Black Background
+    uniqueID: 4103275475
+    locked: 0
+  - name: Background
+    uniqueID: 3840772997
+    locked: 0
+  - name: Foreground
+    uniqueID: 3183282311
+    locked: 0
+  - name: Player
+    uniqueID: 1147613389
+    locked: 0
+  - name: Ground
+    uniqueID: 1061785045
     locked: 0
