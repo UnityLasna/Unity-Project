@@ -41,6 +41,10 @@ public class playermovements : MonoBehaviour
             pressjump = false;
         }
 
+        // Sneak -> speed * 0.X
+        if(Input.GetKey(KeyCode.LeftShift) && horizontalInput != 0 && isGrounded())
+            body.velocity = new Vector2(horizontalInput * speed * 0.3f, body.velocity.y);
+
         // Set animator parameters
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("walk", horizontalInput != 0 && Input.GetKey(KeyCode.LeftShift));
