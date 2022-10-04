@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class crabmonster : MonoBehaviour
 {
-    [SerializeField] private float damage;
+    [SerializeField] private int damage;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

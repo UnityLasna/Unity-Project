@@ -5,6 +5,9 @@ using UnityEngine;
 public class projectile : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private int damage;
+    [SerializeField] private float bulletLifeTime;
+
     private bool hit;
     private float direction;
     private float lifetime;
@@ -25,14 +28,24 @@ public class projectile : MonoBehaviour
         transform.Translate(movementSpeed, 0, 0);
 
         lifetime += Time.deltaTime;
-        if(lifetime > 3) gameObject.SetActive(false);
+        if(lifetime > bulletLifeTime) gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        hit = true;
-        boxCollider.enabled = false;
-        anim.SetTrigger("impact");
+        if(collision.tag == "Ladder")
+        {
+            hit = false;
+        }
+        else
+        {
+            hit = true;
+            boxCollider.enabled = false;
+            anim.SetTrigger("impact");
+        }
+
+        if(collision.tag == "Enemy")
+            collision.GetComponent<health>().TakeDamage(damage);
     }
 
     public void SetDirection(float _direction)

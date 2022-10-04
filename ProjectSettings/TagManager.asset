@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Wall
   - Ladder
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - UI
   - Ground
   - Wall
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -52,6 +53,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3183282311
+    locked: 0
+  - name: Projectile
+    uniqueID: 3133123283
     locked: 0
   - name: Player
     uniqueID: 1147613389

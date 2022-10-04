@@ -6,6 +6,8 @@ public class health : MonoBehaviour
 
     public float currentHealth { get; private set; }
     private playermovements playermovements;
+    private crabpatrol crabpatrol;
+    private crabmonster crabmonster;
     private Animator anim;
     private bool dead;
 
@@ -14,6 +16,8 @@ public class health : MonoBehaviour
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         playermovements = GetComponent<playermovements>();
+        crabpatrol = GetComponentInParent<crabpatrol>();
+        crabmonster = GetComponent<crabmonster>();
     }
 
     public void TakeDamage(float _damage)
@@ -32,7 +36,18 @@ public class health : MonoBehaviour
             if(!dead)
             {
                 anim.SetTrigger("death");
-                playermovements.enabled = false;
+
+                // Player
+                if(playermovements != null)
+                    playermovements.enabled = false;
+
+                // Enemy
+                if(crabpatrol != null)
+                    crabpatrol.enabled = false;
+
+                if(crabmonster != null)
+                    crabmonster.enabled = false;
+
                 dead = true;
             }
         }
