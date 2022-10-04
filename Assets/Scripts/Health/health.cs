@@ -8,6 +8,7 @@ public class health : MonoBehaviour
     private playermovements playermovements;
     private Animator anim;
     private bool dead;
+    
 
     private void Awake()
     {
@@ -42,6 +43,7 @@ public class health : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E))
             TakeDamage(1);
+
     }
 
 }
