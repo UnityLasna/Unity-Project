@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class crabmonster : MonoBehaviour
+public class octopusmonster : MonoBehaviour
 {
     [SerializeField] private int damage;
 

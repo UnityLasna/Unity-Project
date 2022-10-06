@@ -56,7 +56,7 @@ public class playermovements : MonoBehaviour
         anim.SetBool("climb", laddermovements.isClimbing);
     }
 
-    private void Jump()
+    public void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, jumpPower);
     }

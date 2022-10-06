@@ -6,10 +6,13 @@ public class health : MonoBehaviour
 
     public float currentHealth { get; private set; }
     private playermovements playermovements;
-    private crabpatrol crabpatrol;
-    private crabmonster crabmonster;
     private Animator anim;
     private bool dead;
+
+    [Header ("Enemys")]
+    private crabpatrol crabpatrol;
+    private crabmonster crabmonster;
+    private octopusmonster octopusmonster;
 
     private void Awake()
     {
@@ -18,6 +21,7 @@ public class health : MonoBehaviour
         playermovements = GetComponent<playermovements>();
         crabpatrol = GetComponentInParent<crabpatrol>();
         crabmonster = GetComponent<crabmonster>();
+        octopusmonster = GetComponent<octopusmonster>();
     }
 
     public void TakeDamage(float _damage)
@@ -47,6 +51,9 @@ public class health : MonoBehaviour
 
                 if(crabmonster != null)
                     crabmonster.enabled = false;
+
+                if(octopusmonster != null)
+                    octopusmonster.enabled = false;
 
                 dead = true;
             }
