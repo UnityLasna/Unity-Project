@@ -21824,7 +21824,7 @@ GameObject:
   - component: {fileID: 1456414032}
   - component: {fileID: 1456414033}
   - component: {fileID: 1456414034}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: CrabMonster
   m_TagString: Enemy
   m_Icon: {fileID: 0}
