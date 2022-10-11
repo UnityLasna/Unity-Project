@@ -8,6 +8,7 @@ public class health : MonoBehaviour
     private playermovements playermovements;
     private Animator anim;
     private bool dead;
+    
 
     [Header ("Enemys")]
     private crabpatrol crabpatrol;
@@ -36,7 +37,7 @@ public class health : MonoBehaviour
         }
         else
         {
-            // Player Dead
+            // Creature Dead
             if(!dead)
             {
                 anim.SetTrigger("death");
@@ -64,6 +65,7 @@ public class health : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E))
             TakeDamage(1);
+
     }
 
 }
