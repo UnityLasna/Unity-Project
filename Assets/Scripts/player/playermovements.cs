@@ -32,35 +32,31 @@ public class playermovements : MonoBehaviour
         // Left + Right movement
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        if (!sliding) // Prevent player movement while sliding -Akseli
+        // Prevent player movement while sliding
+        if (!sliding)
         {
             body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+
+            // Flip Player when moving left or right
+            if (horizontalInput > 0.01f)
+                transform.localScale = new Vector3(5, 5, 5);
+            else if (horizontalInput < -0.01f)
+                transform.localScale = new Vector3(-5, 5, 5);
+
+            // Jump
+            if (Input.GetKey(KeyCode.Space) && isGrounded())
+                Jump();
+            else
+                pressjump = false;
+
+            // Sneak -> speed * 0.X
+            if (Input.GetKey(KeyCode.LeftShift) && horizontalInput != 0 && isGrounded())
+                body.velocity = new Vector2(horizontalInput * speed * 0.3f, body.velocity.y);
+
+            // Slide
+            if (Input.GetKey(KeyCode.C) && isGrounded() && !anim.GetBool("walk"))
+                goSliding(horizontalInput);
         }
-
-        // Flip Player when moving left or right
-        if (!sliding && horizontalInput > 0.01f)
-            transform.localScale = new Vector3(5, 5, 5);
-        else if (!sliding && horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-5, 5, 5);
-
-        // Jump
-        if (!sliding && Input.GetKey(KeyCode.Space) && isGrounded())
-        {
-            Jump();
-            pressjump = true;
-        }
-        else
-        {
-            pressjump = false;
-        }
-
-        // Sneak -> speed * 0.X
-        if (!sliding && Input.GetKey(KeyCode.LeftShift) && horizontalInput != 0 && isGrounded())
-            body.velocity = new Vector2(horizontalInput * speed * 0.3f, body.velocity.y);
-
-        // Slide
-        if (!sliding && !anim.GetBool("walk") && Input.GetKey(KeyCode.C) && isGrounded())
-            goSliding(horizontalInput);
 
         // Set animator parameters
         anim.SetBool("run", horizontalInput != 0);
@@ -73,6 +69,7 @@ public class playermovements : MonoBehaviour
 
     public void Jump()
     {
+        pressjump = true;
         body.velocity = new Vector2(body.velocity.x, jumpPower);
     }
 
@@ -94,7 +91,6 @@ public class playermovements : MonoBehaviour
 
     IEnumerator stopSlide()
     {
-        Debug.Log("Entered stopSlide()"); // Track in console
         yield return new WaitForSeconds(0.8f);
         anim.Play("Idle");
         anim.SetBool("slide", false);
