@@ -1365,7 +1365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 48846234}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -1889,7 +1889,7 @@ GameObject:
   - component: {fileID: 64464969}
   - component: {fileID: 64464968}
   - component: {fileID: 64464970}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OctopusMonster
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1997,6 +1997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &64464969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2750,9 +2752,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86896162}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Monsters
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9922,7 +9924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 350158618}
   - component: {fileID: 350158619}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crab Patrol (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10483,7 +10485,7 @@ GameObject:
   - component: {fileID: 361642376}
   - component: {fileID: 361642375}
   - component: {fileID: 361642374}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OctopusMonster (4)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -10545,6 +10547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &361642376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11061,7 +11065,7 @@ GameObject:
   - component: {fileID: 375521911}
   - component: {fileID: 375521912}
   - component: {fileID: 375521913}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: feetP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12362,7 +12366,7 @@ GameObject:
   - component: {fileID: 421676707}
   - component: {fileID: 421676706}
   - component: {fileID: 421676705}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OctopusMonster (6)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -12424,6 +12428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &421676707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15571,7 +15577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 518442970}
   - component: {fileID: 518442971}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crab Patrol (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16619,7 +16625,7 @@ GameObject:
   - component: {fileID: 570900142}
   - component: {fileID: 570900141}
   - component: {fileID: 570900140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OctopusMonster (3)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -16681,6 +16687,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &570900142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19557,7 +19565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 713874612}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -20186,7 +20194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 739052419}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -21023,7 +21031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 767976701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -22895,7 +22903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827412147}
   - component: {fileID: 827412148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crab Patrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23973,7 +23981,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 854752124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -24502,6 +24510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabMonster
       objectReference: {fileID: 0}
+    - target: {fileID: 7793077527682947050, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7793077527682947054, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24881,7 +24893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 883839598}
   - component: {fileID: 883839599}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Octopus
   m_TagString: Enemy-head
   m_Icon: {fileID: 0}
@@ -26707,7 +26719,7 @@ GameObject:
   - component: {fileID: 948845618}
   - component: {fileID: 948845617}
   - component: {fileID: 948845616}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OctopusMonster (1)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -26769,6 +26781,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &948845618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26864,7 +26878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 948988837}
   - component: {fileID: 948988838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crab Patrol (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27575,7 +27589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 980870444}
   - component: {fileID: 980870445}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Octopus
   m_TagString: Enemy-head
   m_Icon: {fileID: 0}
@@ -27717,6 +27731,10 @@ PrefabInstance:
     - target: {fileID: 7793077527682947050, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
       propertyPath: m_Name
       value: CrabMonster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793077527682947050, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7793077527682947054, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
       propertyPath: m_RootOrder
@@ -30529,7 +30547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1071262165}
   - component: {fileID: 1071262166}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Octopus
   m_TagString: Enemy-head
   m_Icon: {fileID: 0}
@@ -30755,6 +30773,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  iFramesDuration: 2
+  numberOfFlashes: 3
 --- !u!50 &1079262851 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 8757447147271036622, guid: c310e6e7ebb29cc4c90dd4d5a3a1264d, type: 3}
@@ -31798,7 +31818,7 @@ GameObject:
   - component: {fileID: 1123133578}
   - component: {fileID: 1123133577}
   - component: {fileID: 1123133576}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OctopusMonster (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -31860,6 +31880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &1123133578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33568,7 +33590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1157455391}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -36350,7 +36372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1241235035}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -36718,7 +36740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249883576}
   - component: {fileID: 1249883577}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Octopus
   m_TagString: Enemy-head
   m_Icon: {fileID: 0}
@@ -38207,7 +38229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317763574}
   - component: {fileID: 1317763575}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crab Patrol (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42942,7 +42964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1484505206}
   - component: {fileID: 1484505207}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Octopus
   m_TagString: Enemy-head
   m_Icon: {fileID: 0}
@@ -43592,7 +43614,7 @@ GameObject:
   - component: {fileID: 1496576847}
   - component: {fileID: 1496576846}
   - component: {fileID: 1496576845}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OctopusMonster (5)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -43654,6 +43676,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!114 &1496576847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44021,7 +44045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1504908657}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -45061,7 +45085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1534393159}
   - component: {fileID: 1534393160}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Octopus
   m_TagString: Enemy-head
   m_Icon: {fileID: 0}
@@ -48752,7 +48776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1646075546}
   - component: {fileID: 1646075547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Octopus
   m_TagString: Enemy-head
   m_Icon: {fileID: 0}
@@ -49337,7 +49361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1680909455}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -55003,6 +55027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabMonster
       objectReference: {fileID: 0}
+    - target: {fileID: 7793077527682947050, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7793077527682947054, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -56159,7 +56187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2059227221}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEdge
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -56603,6 +56631,14 @@ PrefabInstance:
     - target: {fileID: 8757447147271036623, guid: c310e6e7ebb29cc4c90dd4d5a3a1264d, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8757447147271036623, guid: c310e6e7ebb29cc4c90dd4d5a3a1264d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8757447148644474799, guid: c310e6e7ebb29cc4c90dd4d5a3a1264d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c310e6e7ebb29cc4c90dd4d5a3a1264d, type: 3}
@@ -58385,6 +58421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabMonster
       objectReference: {fileID: 0}
+    - target: {fileID: 7793077527682947050, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7793077527682947054, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -58930,6 +58970,10 @@ PrefabInstance:
     - target: {fileID: 7793077527682947050, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
       propertyPath: m_Name
       value: CrabMonster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793077527682947050, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7793077527682947054, guid: 3f968124e0732a14685dff01ec134e9b, type: 3}
       propertyPath: m_RootOrder

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class health : MonoBehaviour
 {
@@ -8,7 +9,11 @@ public class health : MonoBehaviour
     private playermovements playermovements;
     private Animator anim;
     private bool dead;
-    
+
+    [Header("iFrames")]
+    [SerializeField] private float iFramesDuration;
+    [SerializeField] private int numberOfFlashes;
+    private SpriteRenderer spriteRend;
 
     [Header ("Enemys")]
     private crabpatrol crabpatrol;
@@ -19,6 +24,7 @@ public class health : MonoBehaviour
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
+        spriteRend = GetComponent<SpriteRenderer>();
         playermovements = GetComponent<playermovements>();
         crabpatrol = GetComponentInParent<crabpatrol>();
         crabmonster = GetComponent<crabmonster>();
@@ -33,6 +39,7 @@ public class health : MonoBehaviour
         {
             // Player Hurt
             anim.SetTrigger("hurt");
+            StartCoroutine(Invulnerability());
             //iframes
         }
         else
@@ -66,6 +73,19 @@ public class health : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
             TakeDamage(1);
 
+    }
+
+    private IEnumerator Invulnerability()
+    {
+        Physics2D.IgnoreLayerCollision(8, 9, true);
+        for (int i = 0; i < numberOfFlashes; i++)
+        {
+            spriteRend.color = new Color(1, 0, 0, 0.5f);
+            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
+            spriteRend.color = Color.white;
+            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
+        }
+        Physics2D.IgnoreLayerCollision(8, 9, false);
     }
 
 }
