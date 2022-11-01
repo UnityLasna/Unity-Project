@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 256056867170866053}
   - component: {fileID: 256056867170866054}
   m_Layer: 6
-  m_Name: damagefloor
+  m_Name: damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
