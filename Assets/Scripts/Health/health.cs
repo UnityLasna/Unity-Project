@@ -19,6 +19,9 @@ public class health : MonoBehaviour
     private crabpatrol crabpatrol;
     private crabmonster crabmonster;
     private octopusmonster octopusmonster;
+    //
+    private tantacle tantacle;
+    
 
     private void Awake()
     {
@@ -29,6 +32,9 @@ public class health : MonoBehaviour
         crabpatrol = GetComponentInParent<crabpatrol>();
         crabmonster = GetComponent<crabmonster>();
         octopusmonster = GetComponent<octopusmonster>();
+        //
+        tantacle = GetComponent<tantacle>();
+       
     }
 
     public void TakeDamage(float _damage)
@@ -62,6 +68,8 @@ public class health : MonoBehaviour
 
                 if(octopusmonster != null)
                     octopusmonster.enabled = false;
+
+               
 
                 dead = true;
             }
