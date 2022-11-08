@@ -69,6 +69,7 @@ public class goblin : MonoBehaviour
         anim.SetBool("moving", PlayerInSight() && !PlayerInRange());
     }
 
+    // Vision range
     private bool PlayerInSight()
     {
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center + transform.right * sightRange * transform.localScale.x * colliderDistance2,
@@ -78,6 +79,7 @@ public class goblin : MonoBehaviour
         return hit.collider != null;
     }
 
+    // Attack when player is in attack range
     private bool PlayerInRange()
     {
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
@@ -90,6 +92,7 @@ public class goblin : MonoBehaviour
         return hit.collider != null;
     }
 
+    // Chases the player when in range
     private void PlayerSpotted()
     {
         if(transform.position.x < player.position.x)
@@ -114,7 +117,7 @@ public class goblin : MonoBehaviour
         new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }
 
-    // Vision check
+    // Vision range check
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
@@ -128,6 +131,7 @@ public class goblin : MonoBehaviour
             playerHealth.TakeDamage(damage);
     }
 
+    // Remove Goblin when killed
     private void Deactivate()
     {
         gameObject.SetActive(false);
