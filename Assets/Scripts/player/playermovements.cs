@@ -18,6 +18,9 @@ public class playermovements : MonoBehaviour
     private bool sliding = false;
     [SerializeField] private float slideSpeed = 10f;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip jumpSound;
+
     private void Awake()
     {
         // Grab references for rigidbody, boxcollider and animator from object
@@ -44,7 +47,7 @@ public class playermovements : MonoBehaviour
                 transform.localScale = new Vector3(-5, 5, 5);
 
             // Jump
-            if (Input.GetKey(KeyCode.Space) && isGrounded())
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
                 Jump();
             else
                 pressjump = false;
@@ -69,6 +72,7 @@ public class playermovements : MonoBehaviour
 
     public void Jump()
     {
+        SoundManager.instance.PlaySound(jumpSound);
         pressjump = true;
         body.velocity = new Vector2(body.velocity.x, jumpPower);
     }

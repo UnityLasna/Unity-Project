@@ -26,6 +26,10 @@ public class goblin : MonoBehaviour
     [SerializeField] private float idleDuration;
     private float idleTimer;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip attackSound;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -43,6 +47,7 @@ public class goblin : MonoBehaviour
             {
                 cooldownTimer = 0;
                 anim.SetTrigger("attack1");
+                SoundManager.instance.PlaySound(attackSound);
             }
         }
         else if(PlayerInSight() && cooldownTimer >= attackCooldown)
@@ -134,6 +139,8 @@ public class goblin : MonoBehaviour
     // Remove Goblin when killed
     private void Deactivate()
     {
+        SoundManager.instance.PlaySound(deathSound);
         gameObject.SetActive(false);
     }
+
 }

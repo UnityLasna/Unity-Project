@@ -21,7 +21,11 @@ public class health : MonoBehaviour
     private octopusmonster octopusmonster;
     //
     private tantacle tantacle;
-    
+
+    [Header("SFX")]
+    [SerializeField] private AudioClip deathSoundPlayer;
+    [SerializeField] private AudioClip hurtSoundPlayer;
+    [SerializeField] private AudioClip deathSoundEnemy;
 
     private void Awake()
     {
@@ -45,6 +49,7 @@ public class health : MonoBehaviour
         {
             // Player Hurt
             anim.SetTrigger("hurt");
+            SoundManager.instance.PlaySound(hurtSoundPlayer);
             StartCoroutine(Invulnerability());
             //iframes
         }
@@ -58,18 +63,20 @@ public class health : MonoBehaviour
                 // Player
                 if(playermovements != null)
                     playermovements.enabled = false;
+                    SoundManager.instance.PlaySound(deathSoundPlayer);
 
                 // Enemy
                 if(crabpatrol != null)
                     crabpatrol.enabled = false;
+                    SoundManager.instance.PlaySound(deathSoundEnemy);
 
                 if(crabmonster != null)
                     crabmonster.enabled = false;
+                    SoundManager.instance.PlaySound(deathSoundEnemy);
 
                 if(octopusmonster != null)
                     octopusmonster.enabled = false;
-
-               
+                    SoundManager.instance.PlaySound(deathSoundEnemy);
 
                 dead = true;
             }
