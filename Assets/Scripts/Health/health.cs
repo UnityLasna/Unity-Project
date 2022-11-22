@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class health : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class health : MonoBehaviour
     private playermovements playermovements;
     private Animator anim;
     private bool dead;
+    private float kills = 0;
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -64,19 +66,23 @@ public class health : MonoBehaviour
                 if(playermovements != null)
                     playermovements.enabled = false;
                     SoundManager.instance.PlaySound(deathSoundPlayer);
+                    Invoke("GameOver", 0.6f);
 
                 // Enemy
                 if(crabpatrol != null)
                     crabpatrol.enabled = false;
                     SoundManager.instance.PlaySound(deathSoundEnemy);
+                    kills +=1;
 
                 if(crabmonster != null)
                     crabmonster.enabled = false;
                     SoundManager.instance.PlaySound(deathSoundEnemy);
+                    kills +=1;
 
                 if(octopusmonster != null)
                     octopusmonster.enabled = false;
                     SoundManager.instance.PlaySound(deathSoundEnemy);
+                    kills +=1;
 
                 dead = true;
             }
@@ -101,6 +107,13 @@ public class health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(8, 9, false);
+    }
+
+    private void GameOver()
+    {
+        
+        PlayerPrefs.SetFloat("kill", kills);
+        SceneManager.LoadScene("GameOver");
     }
 
 }
