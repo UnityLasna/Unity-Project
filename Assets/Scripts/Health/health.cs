@@ -11,6 +11,7 @@ public class health : MonoBehaviour
     private Animator anim;
     private bool dead;
     private float kills = 0;
+    public float pill = 0;
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -63,11 +64,12 @@ public class health : MonoBehaviour
                 anim.SetTrigger("death");
 
                 // Player
-                if(playermovements != null)
+                if (playermovements != null)
+                {
                     playermovements.enabled = false;
                     SoundManager.instance.PlaySound(deathSoundPlayer);
                     Invoke("GameOver", 0.6f);
-
+                }
                 // Enemy
                 if(crabpatrol != null)
                     crabpatrol.enabled = false;
@@ -113,6 +115,7 @@ public class health : MonoBehaviour
     {
         
         PlayerPrefs.SetFloat("kill", kills);
+        PlayerPrefs.SetFloat("pill", pill);
         SceneManager.LoadScene("GameOver");
     }
 

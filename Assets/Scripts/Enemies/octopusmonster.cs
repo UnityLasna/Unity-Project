@@ -15,5 +15,6 @@ public class octopusmonster : MonoBehaviour
     private void Deactivate()
     {
         gameObject.SetActive(false);
+        GameObject.Find("Main Camera").GetComponent<scores>().points += 1f;
     }
 }

@@ -141,6 +141,7 @@ public class goblin : MonoBehaviour
     {
         SoundManager.instance.PlaySound(deathSound);
         gameObject.SetActive(false);
+        GameObject.Find("Main Camera").GetComponent<scores>().points += 3f;
     }
 
 }
