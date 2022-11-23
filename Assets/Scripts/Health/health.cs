@@ -10,8 +10,8 @@ public class health : MonoBehaviour
     private playermovements playermovements;
     private Animator anim;
     private bool dead;
-    private float kills = 0;
-    public float pill = 0;
+    public float kills;
+
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -41,7 +41,8 @@ public class health : MonoBehaviour
         octopusmonster = GetComponent<octopusmonster>();
         //
         tantacle = GetComponent<tantacle>();
-       
+        
+
     }
 
     public void TakeDamage(float _damage)
@@ -71,20 +72,26 @@ public class health : MonoBehaviour
                     Invoke("GameOver", 0.6f);
                 }
                 // Enemy
-                if(crabpatrol != null)
+                if (crabpatrol != null)
+                {
                     crabpatrol.enabled = false;
+                    
                     SoundManager.instance.PlaySound(deathSoundEnemy);
-                    kills +=1;
+                }
 
-                if(crabmonster != null)
+                if (crabmonster != null)
+                {
                     crabmonster.enabled = false;
+                    
                     SoundManager.instance.PlaySound(deathSoundEnemy);
-                    kills +=1;
+                }
 
-                if(octopusmonster != null)
+                if (octopusmonster != null)
+                {
                     octopusmonster.enabled = false;
+                    
                     SoundManager.instance.PlaySound(deathSoundEnemy);
-                    kills +=1;
+                }   
 
                 dead = true;
             }
@@ -113,10 +120,16 @@ public class health : MonoBehaviour
 
     private void GameOver()
     {
-        
-        PlayerPrefs.SetFloat("kill", kills);
-        PlayerPrefs.SetFloat("pill", pill);
+
+        PlayerPrefs.SetFloat("kill", GameObject.Find("Main Camera").GetComponent<scores>().kills); 
+        PlayerPrefs.SetFloat("pill", GameObject.Find("Main Camera").GetComponent<scores>().pills);
+        PlayerPrefs.SetFloat("all", GameObject.Find("Main Camera").GetComponent<scores>().points);
+
         SceneManager.LoadScene("GameOver");
+        Debug.Log(GameObject.Find("Main Camera").GetComponent<scores>().kills);
+        Debug.Log(GameObject.Find("Main Camera").GetComponent<scores>().pills);
+        Debug.Log(GameObject.Find("Main Camera").GetComponent<scores>().points);
+
     }
 
 }

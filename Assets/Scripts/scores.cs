@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class scores : MonoBehaviour
 {
    public float points = 0;
+    public float pills = 0; 
+    public float kills = 0;
    private GameObject score = null;
 
     void Start()
@@ -16,7 +18,7 @@ public class scores : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
         this.score.GetComponent<Text>().text= this.points.ToString("Score: " + points);
     }
 }

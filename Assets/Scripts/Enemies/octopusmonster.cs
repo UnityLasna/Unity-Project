@@ -16,5 +16,6 @@ public class octopusmonster : MonoBehaviour
     {
         gameObject.SetActive(false);
         GameObject.Find("Main Camera").GetComponent<scores>().points += 1f;
+        GameObject.Find("Main Camera").GetComponent<scores>().kills += 1f;
     }
 }

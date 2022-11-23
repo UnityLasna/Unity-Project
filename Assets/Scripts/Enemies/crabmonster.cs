@@ -16,5 +16,6 @@ public class crabmonster : MonoBehaviour
     {
         gameObject.SetActive(false);
         GameObject.Find("Main Camera").GetComponent<scores>().points += 2f;
+        GameObject.Find("Main Camera").GetComponent<scores>().kills += 1f;
     }
 }
