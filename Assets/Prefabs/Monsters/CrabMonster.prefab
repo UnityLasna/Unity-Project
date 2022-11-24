@@ -160,3 +160,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  deathSoundPlayer: {fileID: 0}
+  hurtSoundPlayer: {fileID: 0}
+  deathSoundEnemy: {fileID: 8300000, guid: 821b6440d8e269c40b5a0eb8a44a079d, type: 3}

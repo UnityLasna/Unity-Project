@@ -6,6 +6,9 @@ public class playershoot : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] bullets;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip shootingSound;
+
     private Animator anim;
     private playermovements playermovements;
     private float cooldownTimer = Mathf.Infinity;
@@ -38,6 +41,7 @@ public class playershoot : MonoBehaviour
 
     private void StillShoot()
     {
+        SoundManager.instance.PlaySound(shootingSound);
         anim.SetTrigger("shoot");
         cooldownTimer = 0;
 
@@ -47,6 +51,7 @@ public class playershoot : MonoBehaviour
 
     private void RunShoot()
     {
+        SoundManager.instance.PlaySound(shootingSound);
         anim.SetTrigger("run-shoot");
         cooldownTimer = 0;
 
@@ -56,6 +61,7 @@ public class playershoot : MonoBehaviour
 
     private void JumpShoot()
     {
+        SoundManager.instance.PlaySound(shootingSound);
         cooldownTimer = 0;
 
         bullets[FindBullet()].transform.position = firePoint.position;
@@ -64,6 +70,7 @@ public class playershoot : MonoBehaviour
 
     private void CrouchShoot()
     {
+        SoundManager.instance.PlaySound(shootingSound);
         cooldownTimer = 0;
 
         Vector3 firePointCrouch = firePoint.position;
