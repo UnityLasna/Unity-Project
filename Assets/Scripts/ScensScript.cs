@@ -49,4 +49,9 @@ public class ScensScript : MonoBehaviour
         SceneManager.LoadScene("Level 1");
         Debug.Log("Loading level 1");
     }
+
+    public void Options ()
+    {
+        Debug.Log("ladataan optionsit");
+    }
 }
