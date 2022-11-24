@@ -7,6 +7,8 @@ public class ScensScript : MonoBehaviour
 {
     public static bool GamePaused = false;
     public GameObject pauseUI;
+    public GameObject optionsUI;
+
     
     void Update()
     {
@@ -52,6 +54,13 @@ public class ScensScript : MonoBehaviour
 
     public void Options ()
     {
+        optionsUI.SetActive(true);
         Debug.Log("ladataan optionsit");
+
+    }
+
+    public void Back ()
+    {
+        optionsUI.SetActive(false);
     }
 }
