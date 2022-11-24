@@ -36,7 +36,7 @@ public class ScensScript : MonoBehaviour
 
     public void Menu() {
        Time.timeScale = 1f;
-       SceneManager.LoadScene("Level 1");
+       SceneManager.LoadScene("Manus");
        
     }
 
@@ -46,7 +46,7 @@ public class ScensScript : MonoBehaviour
     }
 
     public void NewGame() {
-        SceneManager.LoadScene("background");
+        SceneManager.LoadScene("Level 1");
         Debug.Log("Loading level 1");
     }
 }
