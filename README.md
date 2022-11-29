@@ -38,17 +38,16 @@ Pelin teema koukuttaa pelaajan jo ennen pelin alkua.
 
 Unityn Assets kirjastosta löydettiin meidän tarinallemme sopivia hahmojen ja ympäristön assetteja.  
 
-        https://assetstore.unity.com/packages/2d/characters/warped-caves-103250#reviews 
+https://assetstore.unity.com/packages/2d/characters/warped-caves-103250#reviews 
 
+https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-138128#description 
 
-        https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-138128#description 
+https://assetstore.unity.com/packages/2d/environments/warped-city-2-200208 
 
-
-        https://assetstore.unity.com/packages/2d/environments/warped-city-2-200208 
 
 # Kontrollit:	
 
-        LEFT –  Left Arrow 
+        	LEFT –  Left Arrow 
 
 		RIGHT – Right Arrow
 
@@ -85,6 +84,7 @@ Unityn Prefab järjestelmän avulla voi luoda uudelleen käytetttäviä GameObje
 Meidän luomia prefabeja: 
 
 Canvas
+
     optionsUI,
     pauseUI, 
     UICanvas,
@@ -96,11 +96,14 @@ Canvas
     Player
 
 Background
-EnvNew
+	
+	EnvNew
+	
 Edellä mainitut Prefabit eivät vaati toimiakseen uudelleen määrityksiä.
 
 ScorePill
-Pill, jotta saisit luvun kerätyistä esineistä/kaatuneista monstereista sinun tulee lisätä scores scriptin olemassa olevaan GameObjektiin vaikka Main Cameraan. 
+
+	Pill, jotta saisit luvun kerätyistä esineistä/kaatuneista monstereista sinun tulee lisätä scores scriptin olemassa olevaan GameObjektiin vaikka Main Cameraan. 
 
 
 # Jos haluat pelata peliä  
