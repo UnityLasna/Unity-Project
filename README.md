@@ -1,6 +1,6 @@
 # Unity-Project
 
-Projektimme on avoin 
+Projektimme repository on avoin kaikille jotka haluavat käyttää projektiamme pohjana. 
 
 Pako Tokiosta. 
 
