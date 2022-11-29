@@ -55,7 +55,7 @@ https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-13
 
 https://assetstore.unity.com/packages/2d/environments/warped-city-2-200208 
 
-Kontrollit:	LEFT –  Left Arrow 
+# Kontrollit:	LEFT –  Left Arrow 
 
 		RIGHT – Right Arrow
 
@@ -77,7 +77,7 @@ Projektimme on avoin
 
  
 
-Lataus itselleen:  
+# Lataus itselleen:  
 
 Tässä on kaikki mitä tarvitset saadakseen pelin itsellesi jos haluat jatkokehittää peliä 
 
