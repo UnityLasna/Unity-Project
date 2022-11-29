@@ -53,23 +53,23 @@ https://assetstore.unity.com/packages/2d/characters/monsters-creatures-fantasy-1
 
 Rakennettu:   
 
-		Unity versio 2021.3.8f1 
+	Unity versio 2021.3.8f1 
 
 # Kontrollit:	
 
-        	LEFT –  Left Arrow 
+        LEFT –  Left Arrow 
 
-		RIGHT – Right Arrow
+	RIGHT – Right Arrow
 
-		CROUCH- Down Arrow
+	CROUCH- Down Arrow
 
-		SHOOT - Z 
+	SHOOT - Z 
 
-		SLIDE - C 
+	SLIDE - C 
 
-		JUMP - Spacebar 
+	JUMP - Spacebar 
 		
-		WALK - Shift
+	WALK - Shift
  
 
 
