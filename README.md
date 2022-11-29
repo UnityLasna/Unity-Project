@@ -51,21 +51,25 @@ Unityn Assets kirjastosta löydettiin meidän tarinallemme sopivia hahmojen ja y
 
 https://assetstore.unity.com/packages/2d/characters/warped-caves-103250#reviews 
 
-Kontrollit:	LEFT – A/Shape 
+https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-138128#description 
 
-		RIGHT – D/Shape 
+https://assetstore.unity.com/packages/2d/environments/warped-city-2-200208 
 
-		CROUCH-Shape 
+Kontrollit:	LEFT –  Left Arrow 
 
-SHOOT - Z 
+		RIGHT – Right Arrow
 
-SLIDE - C 
+		CROUCH- Down Arrow
 
-JUMP - Spacebar   
+		SHOOT - Z 
+
+		SLIDE - C 
+
+		JUMP - Spacebar   
 
 Rakennettu:   
 
-Unity versio 2021.3.8f1 
+		Unity versio 2021.3.8f1 
 
  
 
@@ -77,22 +81,10 @@ Lataus itselleen:
 
 Tässä on kaikki mitä tarvitset saadakseen pelin itsellesi jos haluat jatkokehittää peliä 
 
-Kloonaa repository itselle git clone https://github.com/UnityLasna/Unity-Project.git 
+	Kloonaa repository itselle git clone https://github.com/UnityLasna/Unity-Project.git 
 
-Avaa Unity projekti ja huomioi Unity- versio 
+	Avaa Unity projekti ja huomioi Unity- versio 
 
 Jos haluat pelata peliä  
 
-Linkki tässä 
-
-  
-
-https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-138128#description 
-
-  
-
-https://assetstore.unity.com/packages/2d/environments/warped-city-2-200208 
-
-
-
-     
+	Linkki tässä      
