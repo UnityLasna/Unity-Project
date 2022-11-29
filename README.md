@@ -66,7 +66,9 @@ Rakennettu:
 
 		SLIDE - C 
 
-		JUMP - Spacebar   
+		JUMP - Spacebar 
+		
+		WALK - Shift
  
 
 Projektimme on avoin 
