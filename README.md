@@ -44,6 +44,10 @@ https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-13
 
 https://assetstore.unity.com/packages/2d/environments/warped-city-2-200208 
 
+https://assetstore.unity.com/packages/2d/grass-tail-animation-s-2d-229688
+
+https://assetstore.unity.com/packages/2d/characters/monsters-creatures-fantasy-167949
+
 
 
 Rakennettu:   
