@@ -59,17 +59,17 @@ Rakennettu:
 
         LEFT –  Left Arrow 
 
-	RIGHT – Right Arrow
+		RIGHT – Right Arrow
 
-	CROUCH- Down Arrow
+		CROUCH- Down Arrow
 
-	SHOOT - Z 
+		SHOOT - Z 
 
-	SLIDE - C 
+		SLIDE - C 
 
-	JUMP - Spacebar 
+		JUMP - Spacebar 
 		
-	WALK - Shift
+		WALK - Shift
  
 
 
