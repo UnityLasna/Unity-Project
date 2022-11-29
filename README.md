@@ -104,7 +104,7 @@ Background
 	
 	EnvNew
 	
-Edellä mainitut Prefabit eivät vaati toimiakseen uudelleen määrityksiä.
+Edellä mainitut Prefabit eivät vaadi toimiakseen uudelleen määrityksiä.
 
 ScorePill
 
