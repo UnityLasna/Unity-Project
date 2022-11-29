@@ -45,6 +45,11 @@ https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-13
 https://assetstore.unity.com/packages/2d/environments/warped-city-2-200208 
 
 
+
+Rakennettu:   
+
+		Unity versio 2021.3.8f1 
+
 # Kontrollit:	
 
         	LEFT –  Left Arrow 
@@ -58,11 +63,6 @@ https://assetstore.unity.com/packages/2d/environments/warped-city-2-200208
 		SLIDE - C 
 
 		JUMP - Spacebar   
-
-Rakennettu:   
-
-		Unity versio 2021.3.8f1 
-
  
 
 Projektimme on avoin 
@@ -92,7 +92,6 @@ Canvas
     Tantacle2,
     Tentacle,
     Godzilla
-    Player
     Player
 
 Background
