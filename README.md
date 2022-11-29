@@ -57,7 +57,7 @@ Rakennettu:
 
 # Kontrollit:	
 
-        LEFT –  Left Arrow 
+	LEFT –  Left Arrow 
 
 	RIGHT – Right Arrow
 
