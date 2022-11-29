@@ -1,5 +1,6 @@
 # Unity-Project
 
+Projektimme on avoin 
 
 Pako Tokiosta. 
 
@@ -71,9 +72,6 @@ Rakennettu:
 		WALK - Shift
  
 
-Projektimme on avoin 
-
- 
 
 # Lataus itselleen:  
 
@@ -109,7 +107,9 @@ Edellä mainitut Prefabit eivät vaadi toimiakseen uudelleen määrityksiä.
 ScorePill
 
 	Pill, jotta saisit luvun kerätyistä esineistä/kaatuneista monstereista sinun tulee lisätä scores scriptin olemassa olevaan GameObjektiin vaikka Main Cameraan. 
+# Rakennusten tekeminen
 
+Pelitason rakennukset ovat koottu pienistä osista ja koottu yhteeen. Jokainen rakennus on uniikki ja ne on nimetty aakkosjärjestyksessä Level kansion sisään. 
 
 # Jos haluat pelata peliä  
 
