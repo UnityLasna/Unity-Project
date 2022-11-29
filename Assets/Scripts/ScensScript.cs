@@ -7,6 +7,8 @@ public class ScensScript : MonoBehaviour
 {
     public static bool GamePaused = false;
     public GameObject pauseUI;
+    public GameObject optionsUI;
+
     
     void Update()
     {
@@ -49,4 +51,16 @@ public class ScensScript : MonoBehaviour
         SceneManager.LoadScene("Level 1");
         Debug.Log("Loading level 1");
     }
+
+    public void Options()
+    {
+        optionsUI.SetActive(true);
+        Debug.Log("Options");
+    }
+
+    public void Back ()
+    {
+        optionsUI.SetActive(false);
+    }
+
 }
