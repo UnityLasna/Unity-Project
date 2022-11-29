@@ -94,10 +94,10 @@ Canvas
     optionsUI,
     pauseUI, 
     UICanvas,
-    Monsters
+    Monsters,
     Tantacle2,
     Tentacle,
-    Godzilla
+    Godzilla,
     Player
 
 Background
