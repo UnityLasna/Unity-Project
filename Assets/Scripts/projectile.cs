@@ -23,17 +23,17 @@ public class projectile : MonoBehaviour
 
     private void Update()
     {
-        if(hit) return;
+        if (hit) return;
         float movementSpeed = speed * Time.deltaTime * direction;
         transform.Translate(movementSpeed, 0, 0);
 
         lifetime += Time.deltaTime;
-        if(lifetime > bulletLifeTime) gameObject.SetActive(false);
+        if (lifetime > bulletLifeTime) gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Ladder")
+        if (collision.tag == "Ladder")
         {
             hit = false;
         }
@@ -44,8 +44,11 @@ public class projectile : MonoBehaviour
             anim.SetTrigger("impact");
         }
 
-        if(collision.tag == "Enemy")
+        if (collision.tag == "Enemy")
             collision.GetComponent<health>().TakeDamage(damage);
+            
+        if (collision.tag == "Boss")
+            collision.GetComponent<bosshealth>().TakeDamage(damage);
     }
 
     public void SetDirection(float _direction)
@@ -57,7 +60,7 @@ public class projectile : MonoBehaviour
         boxCollider.enabled = true;
 
         float localScaleX = transform.localScale.x;
-        if(Mathf.Sign(localScaleX) != _direction)
+        if (Mathf.Sign(localScaleX) != _direction)
             localScaleX = -localScaleX;
 
         transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
