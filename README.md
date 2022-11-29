@@ -55,7 +55,8 @@ https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-13
 
 https://assetstore.unity.com/packages/2d/environments/warped-city-2-200208 
 
-Kontrollit:	LEFT –  Left Arrow 
+Kontrollit:	
+		LEFT –  Left Arrow 
 
 		RIGHT – Right Arrow
 
