@@ -4,7 +4,8 @@ Projektimme repository on avoin kaikille jotka haluavat käyttää projektiamme 
 
 # Pako Tokiosta. 
 
- 
+![image](https://user-images.githubusercontent.com/98485725/204821392-d0557d31-cb93-4afd-95ec-73d5e73c3993.png)
+
 
 Tyynellä valtamerellä tapahtuu maanjäristys, jonka johdosta Japanin etelärannikolle kömpii hirviömaisia olentoja. Nälän ohjaamia hirviöitä alkaa vaeltamaan kaupunkeja kohti.  
 
@@ -18,7 +19,7 @@ Japanin puolustusvoimat käyvät kiivasta taistelua hirviötä vastaan mutta nii
 
 Päästyään tukikohtaan hahmomme ottaa yhden robotin käyttöönsä ja alkaa tappelemaan jättiolentojen kanssa.  
 
- 
+![image](https://user-images.githubusercontent.com/98485725/204858259-066eac95-43d5-4824-a9fa-e1c4162c7228.png)
 
 
 Halutaan tarjota pelaajalle mahdollisuutta pelata peliä, jonka tarkoituksena on päästä mahdollisimman nopeasti tasoja läpi. Jatkuvan kehityksen mahdollisuus saa pelaajan pelaamaan peliä aina uudestaan ja uudestaan. Monipeli mahdollisuus nostaa mielenkiintoa peliä kohtaan. Ystävän päihittäminen pelissä on hyvä tapa lisätä viihtyvyyttä peliin. 
@@ -84,7 +85,7 @@ Kloonaa repository itselle
 Avaa Unity projekti ja huomioi Unity- versio 
 
 # Prefabs
-Unityn Prefab järjestelmän avulla voi luoda uudelleen käytetttäviä GameObjekteje. Uudelleen käyttö ei vaadi mitään muuta kuin GameObjektin raahamisen uuteen ympäristöön ja mahdollisesti scriptien uudelleen määritystä.
+Unityn Prefab järjestelmän avulla voi luoda uudelleen käytetttäviä GameObjekteja. Uudelleenkäyttö ei vaadi mitään muuta kuin GameObjektin raahamisen uuteen ympäristöön ja mahdollisesti scriptien uudelleen määritystä.
 Meidän luomia prefabeja: 
 
 Canvas

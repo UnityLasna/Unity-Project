@@ -9,6 +9,7 @@ TagManager:
   - Ladder
   - Enemy
   - Enemy-head
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -43,11 +44,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: BB
+    uniqueID: 2472536553
     locked: 0
   - name: Black Background
     uniqueID: 4103275475
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Background
     uniqueID: 3840772997
@@ -63,4 +67,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 1061785045
+    locked: 0
+  - name: building
+    uniqueID: 3643809099
     locked: 0

@@ -9,7 +9,7 @@ public class FinnishLine : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
