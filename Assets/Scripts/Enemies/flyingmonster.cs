@@ -25,6 +25,10 @@ public class flyingmonster : MonoBehaviour
     [SerializeField] private float sizeX;
     [SerializeField] private float sizeY;
 
+    [Header ("SFX")]
+    [SerializeField] private AudioClip attackSound;
+    [SerializeField] private AudioClip deathSound;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -50,6 +54,7 @@ public class flyingmonster : MonoBehaviour
             {
                 cooldownTimer = 0;
                 anim.SetTrigger("attack");
+                SoundManager.instance.PlaySound(attackSound);
             }
         }
         else if(PlayerInSight() && cooldownTimer >= attackCooldown)
@@ -131,6 +136,7 @@ public class flyingmonster : MonoBehaviour
     // Remove mob when killed
     private void Deactivate()
     {
+        SoundManager.instance.PlaySound(deathSound);
         gameObject.SetActive(false);
     }
 }
