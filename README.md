@@ -4,7 +4,8 @@ Projektimme repository on avoin kaikille jotka haluavat käyttää projektiamme 
 
 # Pako Tokiosta. 
 
- 
+![image](https://user-images.githubusercontent.com/98485725/204821392-d0557d31-cb93-4afd-95ec-73d5e73c3993.png)
+
 
 Tyynellä valtamerellä tapahtuu maanjäristys, jonka johdosta Japanin etelärannikolle kömpii hirviömaisia olentoja. Nälän ohjaamia hirviöitä alkaa vaeltamaan kaupunkeja kohti.  
 
