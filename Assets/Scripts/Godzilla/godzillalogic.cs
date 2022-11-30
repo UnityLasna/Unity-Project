@@ -30,6 +30,10 @@ public class godzillalogic : MonoBehaviour
     [SerializeField] private float movementSpeed = 3f;
     private int moveDirection;
 
+    [Header ("SFX")]
+    [SerializeField] private AudioClip stompSound;
+    [SerializeField] private AudioClip shootSound;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -91,6 +95,7 @@ public class godzillalogic : MonoBehaviour
     }
     private void Shoot()
     {
+        SoundManager.instance.PlaySound(shootSound);
         // "GodzillaFireball.prefab" dragged to "[SerializeField] private GameObject projectile"
         // Instantiate() clones this prefab to the game when shooting
         Instantiate(projectile, fireballPoint.position, Quaternion.identity);
@@ -119,6 +124,7 @@ public class godzillalogic : MonoBehaviour
         player = GameObject.Find("Player");
         if (playerDistance <= stompRange && player.GetComponent<playermovements>().isGrounded())
         {
+            SoundManager.instance.PlaySound(stompSound);
             Debug.Log("Stomped");
             player.GetComponent<playermovements>().goSliding(stompForce); // Could not apply stompForce in x-axis without sliding
             player.GetComponent<health>().TakeDamage(stompDamage);

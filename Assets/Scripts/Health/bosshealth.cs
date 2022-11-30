@@ -14,6 +14,10 @@ public class bosshealth : MonoBehaviour
     private BoxCollider2D boxCollider;
     private GameObject deathObj;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip bossHurt;
+    [SerializeField] private AudioClip bossDeath;
+
     private void Awake()
     {
         currentHealth = startingHealth;
@@ -31,6 +35,7 @@ public class bosshealth : MonoBehaviour
         {
             if (takeDamage)
             {
+                SoundManager.instance.PlaySound(bossHurt);
                 StartCoroutine(Invulnerability()); // Turn red while invulnerable
                 currentHealth = currentHealth - damage;
 
@@ -45,6 +50,7 @@ public class bosshealth : MonoBehaviour
         {
             if (!dead)
             {
+                SoundManager.instance.PlaySound(bossDeath);
                 dead = true;
 
                 // Disable godzilla
