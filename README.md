@@ -19,7 +19,7 @@ Japanin puolustusvoimat käyvät kiivasta taistelua hirviötä vastaan mutta nii
 
 Päästyään tukikohtaan hahmomme ottaa yhden robotin käyttöönsä ja alkaa tappelemaan jättiolentojen kanssa.  
 
- 
+![image](https://user-images.githubusercontent.com/98485725/204858259-066eac95-43d5-4824-a9fa-e1c4162c7228.png)
 
 
 Halutaan tarjota pelaajalle mahdollisuutta pelata peliä, jonka tarkoituksena on päästä mahdollisimman nopeasti tasoja läpi. Jatkuvan kehityksen mahdollisuus saa pelaajan pelaamaan peliä aina uudestaan ja uudestaan. Monipeli mahdollisuus nostaa mielenkiintoa peliä kohtaan. Ystävän päihittäminen pelissä on hyvä tapa lisätä viihtyvyyttä peliin. 
