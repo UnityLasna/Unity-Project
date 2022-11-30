@@ -9,6 +9,7 @@ TagManager:
   - Ladder
   - Enemy
   - Enemy-head
+  - Boss
   layers:
   - Default
   - TransparentFX
