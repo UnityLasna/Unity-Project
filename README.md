@@ -85,7 +85,7 @@ Kloonaa repository itselle
 Avaa Unity projekti ja huomioi Unity- versio 
 
 # Prefabs
-Unityn Prefab järjestelmän avulla voi luoda uudelleen käytetttäviä GameObjekteje. Uudelleen käyttö ei vaadi mitään muuta kuin GameObjektin raahamisen uuteen ympäristöön ja mahdollisesti scriptien uudelleen määritystä.
+Unityn Prefab järjestelmän avulla voi luoda uudelleen käytetttäviä GameObjekteja. Uudelleenkäyttö ei vaadi mitään muuta kuin GameObjektin raahamisen uuteen ympäristöön ja mahdollisesti scriptien uudelleen määritystä.
 Meidän luomia prefabeja: 
 
 Canvas
