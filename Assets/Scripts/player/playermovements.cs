@@ -14,7 +14,6 @@ public class playermovements : MonoBehaviour
     [SerializeField] private int jumpPower;
     [SerializeField] private LayerMask groundLayer;
 
-    // Variables related to sliding -Akseli
     private bool sliding = false;
     [SerializeField] private float slideSpeed = 10f;
 
@@ -83,7 +82,7 @@ public class playermovements : MonoBehaviour
         return raycastHit.collider != null;
     }
 
-    private void goSliding(float horiIn)
+    public void goSliding(float horiIn)
     {
         sliding = true;
         anim.SetBool("slide", true);
@@ -100,6 +99,4 @@ public class playermovements : MonoBehaviour
         anim.SetBool("slide", false);
         sliding = false;
     }
-
-    //public bool canAttack() {}
 }
