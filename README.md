@@ -2,9 +2,10 @@
 
 Projektimme repository on avoin kaikille jotka haluavat käyttää projektiamme pohjana. 
 
-Pako Tokiosta. 
+# Pako Tokiosta. 
 
- 
+![image](https://user-images.githubusercontent.com/98485725/204821392-d0557d31-cb93-4afd-95ec-73d5e73c3993.png)
+
 
 Tyynellä valtamerellä tapahtuu maanjäristys, jonka johdosta Japanin etelärannikolle kömpii hirviömaisia olentoja. Nälän ohjaamia hirviöitä alkaa vaeltamaan kaupunkeja kohti.  
 
@@ -109,7 +110,7 @@ ScorePill
 	Pill, jotta saisit luvun kerätyistä esineistä/kaatuneista monstereista sinun tulee lisätä scores scriptin olemassa olevaan GameObjektiin vaikka Main Cameraan. 
 # Rakennusten tekeminen
 
-Pelitason rakennukset ovat koottu pienistä osista ja koottu yhteeen. Jokainen rakennus on uniikki ja ne on nimetty aakkosjärjestyksessä Level kansion sisään. 
+Pelitason rakennukset ovat koottu pienistä osista ja koottu yhteeen. Rakennukset on eritelty ja löytyvät Level 1 Scenen "level" osion alta aakkos järjestyksessä. Jokainen rakennus ollaan eritelty tasoiksi ja taustoiksi selvyyden vuoksi. 
 
 # Jos haluat pelata peliä  
 

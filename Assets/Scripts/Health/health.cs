@@ -97,14 +97,7 @@ public class health : MonoBehaviour
             }
         }
     }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.E))
-            TakeDamage(1);
-
-    }
-
+    
     private IEnumerator Invulnerability()
     {
         Physics2D.IgnoreLayerCollision(8, 9, true);
