@@ -136,6 +136,8 @@ public class flyingmonster : MonoBehaviour
     // Remove mob when killed
     private void Deactivate()
     {
+        GameObject.Find("Main Camera").GetComponent<scores>().points += 2f;
+        GameObject.Find("Main Camera").GetComponent<scores>().kills += 1f;
         SoundManager.instance.PlaySound(deathSound);
         gameObject.SetActive(false);
     }

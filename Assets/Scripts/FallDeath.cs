@@ -9,6 +9,10 @@ public class FallDeath : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+
+            PlayerPrefs.SetFloat("kill", GameObject.Find("Main Camera").GetComponent<scores>().kills);
+            PlayerPrefs.SetFloat("pill", GameObject.Find("Main Camera").GetComponent<scores>().pills);
+            PlayerPrefs.SetFloat("all", GameObject.Find("Main Camera").GetComponent<scores>().points);
             SceneManager.LoadScene("GameOver");
         }
     }
