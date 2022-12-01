@@ -22,7 +22,7 @@ Päästyään tukikohtaan hahmomme ottaa yhden robotin käyttöönsä ja alkaa t
 ![image](https://user-images.githubusercontent.com/98485725/204858259-066eac95-43d5-4824-a9fa-e1c4162c7228.png)
 
 
-Halutaan tarjota pelaajalle mahdollisuutta pelata peliä, jonka tarkoituksena on päästä mahdollisimman nopeasti tasoja läpi. Jatkuvan kehityksen mahdollisuus saa pelaajan pelaamaan peliä aina uudestaan ja uudestaan. Monipeli mahdollisuus nostaa mielenkiintoa peliä kohtaan. Ystävän päihittäminen pelissä on hyvä tapa lisätä viihtyvyyttä peliin. 
+Halutaan tarjota pelaajalle mahdollisuutta pelata peliä, jonka tarkoituksena on päästä mahdollisimman nopeasti tasoja läpi. Jatkuvan kehityksen mahdollisuus saa pelaajan pelaamaan peliä aina uudestaan ja uudestaan.
 
 Pelin teema koukuttaa pelaajan jo ennen pelin alkua. 
 
