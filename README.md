@@ -55,7 +55,7 @@ https://assetstore.unity.com/packages/2d/characters/monsters-creatures-fantasy-1
 # Rakennettu:   
 
 	Unity versio 2021.3.8f1 
-	https://unity3d.com/get-unity/download/archive
+	
 
 # Kontrollit:	
 
@@ -83,7 +83,10 @@ Kloonaa repository itselle
 
         git clone https://github.com/UnityLasna/Unity-Project.git 
 
-Avaa Unity projekti ja huomioi Unity- versio 
+Asenna UnityHub (huomioi versio)
+	https://unity3d.com/get-unity/download/archive
+
+ 
 
 # Prefabs
 Unityn Prefab järjestelmän avulla voi luoda uudelleen käytetttäviä GameObjekteja. Uudelleenkäyttö ei vaadi mitään muuta kuin GameObjektin raahamisen uuteen ympäristöön ja mahdollisesti scriptien uudelleen määritystä.
