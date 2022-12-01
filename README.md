@@ -98,6 +98,7 @@ Canvas
     Tentacle,
     Godzilla,
     Player
+    Pill Bottle
 
 Background
 	
