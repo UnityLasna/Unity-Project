@@ -120,4 +120,4 @@ Pelitason rakennukset ovat koottu pienistä osista ja koottu yhteeen. Rakennukse
 
 # Jos haluat pelata peliä  
 
-	    Linkki tässä      
+	    https://play.unity.com/mg/other/escape-from-tokyo-1-0
