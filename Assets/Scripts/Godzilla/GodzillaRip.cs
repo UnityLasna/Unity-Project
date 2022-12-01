@@ -9,6 +9,8 @@ public class GodzillaRip : MonoBehaviour
     private void Deactivate()
     {
         gameObject.SetActive(false);
+        GameObject.Find("Main Camera").GetComponent<scores>().points += 10f;
+        GameObject.Find("Main Camera").GetComponent<scores>().kills += 1f;
         SceneManager.LoadScene("GameOver");
     }
 }
